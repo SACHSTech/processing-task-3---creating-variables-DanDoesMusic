@@ -19,6 +19,7 @@ public class Sketch extends PApplet {
     background(255);
   }
 
+
     float flowerX = 150;
     float flowerY = 150;
     float petalSize = 100;
@@ -48,6 +49,14 @@ public class Sketch extends PApplet {
 
         fill(255, 0, 0);
    rect(flowerf, flowerr,  petalSizes, petalSizes);
+
+  int m = minute();  // Values from 0 - 59
+  int h = hour();    // Values from 0 - 23
+  int hour = h - 5;
+
+text(hour, 20, 200);
+text (m, 50, 200);
+  
 }
 
 }
