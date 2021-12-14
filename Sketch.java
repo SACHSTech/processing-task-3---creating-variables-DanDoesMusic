@@ -16,21 +16,38 @@ public class Sketch extends PApplet {
    * values here i.e background, stroke, fill etc.
    */
   public void setup() {
-    background(210, 255, 173);
+    background(255);
   }
 
-  /**
-   * Called repeatedly, anything drawn to the screen goes here
-   */
+    float flowerX = 150;
+    float flowerY = 150;
+    float petalSize = 100;
+    float petalDistance = petalSize / 2;
+
+    
+    float flowera = 00;
+    float flowerb = 200;
+    float petalSizec = 100;
+    float petalDistanced = petalSize / 2;
+
+        
+    float flowerf = 020;
+    float flowerr = 120;
+    float petalSizes = 50;
+    float petalDistancea = petalSize / 2;
   public void draw() {
 	  
 	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
 
-    stroke(255);
-    line(50, 125, 70, 50);  
-  }
-  
-  // define other methods down here.
+
+    fill(255, 0, 0);
+    ellipse(flowerX, flowerY,  petalSize, petalSize);
+
+      fill(255, 0, 0);
+   rect(flowera, flowerb,  petalSizec, petalSizec);
+
+        fill(255, 0, 0);
+   rect(flowerf, flowerr,  petalSizes, petalSizes);
+}
+
 }
